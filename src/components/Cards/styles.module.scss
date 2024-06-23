@@ -1,0 +1,36 @@
+@import 'src/styles/mixins';
+@import 'src/styles/colorVariables';
+@import 'src/styles/utilsVariables';
+@import 'src/styles/fontsVariables';
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.dropdown {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	border: 0px #000 solid;
+	border-radius: $RADIUS;
+	background-color: $ACCORDION_COLOR;
+
+	transition: height 0.3s ease-in;
+	cursor: pointer;
+
+	.title {
+		@include CARD_TITLE_SETUP;
+	}
+}
+.dropdown_active {
+	border-width: 1px;
+	display: block;
+	height: 343px;
+}

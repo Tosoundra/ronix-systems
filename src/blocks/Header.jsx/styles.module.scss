@@ -1,0 +1,40 @@
+@import 'src/styles/ColorVariables';
+@import 'src/styles/UtilsVariables';
+@import 'src/styles/fontsVariables';
+
+.header {
+	width: 100%;
+	background-color: $MAIN_COLOR;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	.company-name {
+		font-size: $FONT_SIZE_COMPANY-NAME;
+		font-weight: $FONT_WEIGHT_BOLD;
+	}
+
+	.navigation {
+		display: flex;
+		gap: 16px;
+
+		.anchor {
+			display: flex;
+			width: 245px;
+			height: 48px;
+			border-radius: $PADDING;
+			background-color: $ADDITIONAL_COLOR;
+
+			.anchor-text {
+				margin: auto;
+			}
+		}
+	}
+
+	.profile {
+		display: flex;
+		gap: 50px;
+	}
+}

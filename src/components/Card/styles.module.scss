@@ -1,0 +1,35 @@
+@import 'src/styles/mixins';
+@import 'src/styles/colorVariables';
+@import 'src/styles/utilsVariables';
+@import 'src/styles/fontsVariables';
+
+.card {
+	position: relative;
+	max-width: 424px;
+	width: 100%;
+	height: 323px;
+	border: 1px solid #000;
+	border-radius: $RADIUS;
+	background-color: $MAIN_COLOR;
+	cursor: pointer;
+	&:hover {
+		background-color: $SELECTED_CARD_COLOR;
+	}
+
+	.title {
+		@include CARD_TITLE_SETUP;
+		// position: absolute;
+		// left: 32px;
+		// bottom: 65px;
+		// font-size: $FONT_SIZE_MAIN;
+		// font-weight: $FONT_WEIGHT_BOLD;
+	}
+
+	.title_white {
+		color: #fff;
+	}
+}
+
+.card_active {
+	background-color: $SELECTED_CARD_COLOR;
+}

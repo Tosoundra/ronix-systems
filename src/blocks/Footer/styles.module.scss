@@ -1,0 +1,25 @@
+@import 'src/styles/ColorVariables';
+@import 'src/styles/UtilsVariables';
+@import 'src/styles/fontsVariables';
+
+.footer {
+	height: 245px;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 51px;
+	background-color: $MAIN_COLOR;
+
+	.company-name {
+		font-size: $FONT_SIZE_COMPANY-NAME;
+		font-weight: $FONT_WEIGHT_BOLD;
+	}
+
+	.link-container {
+		display: flex;
+		flex-direction: column;
+		gap: $ELEMENTS_GAP;
+		.link {
+			font-size: $FONT_SIZE_FOOTER-LINK;
+		}
+	}
+}

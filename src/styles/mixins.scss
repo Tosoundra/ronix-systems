@@ -1,0 +1,17 @@
+@import 'src/styles/colorVariables';
+@import 'src/styles/utilsVariables';
+@import 'src/styles/fontsVariables';
+
+@mixin CARD_TITLE_SETUP {
+	position: absolute;
+	left: 32px;
+	bottom: 65px;
+	font-size: $FONT_SIZE_MAIN;
+	font-weight: $FONT_WEIGHT_BOLD;
+}
+
+@mixin BLOCK_GAP {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
