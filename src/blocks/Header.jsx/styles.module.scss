@@ -1,10 +1,10 @@
-@import 'src/styles/colorVariables.scss';
-@import 'src/styles/utilsVariables.scss';
-@import 'src/styles/fontsVariables.scss';
+@use '/src/styles/colorVariables.scss';
+@use '/src/styles/utilsVariables.scss';
+@use '/src/styles/fontsVariables.scss';
 
 .header {
 	width: 100%;
-	background-color: $MAIN_COLOR;
+	background-color: colorVariables.$MAIN_COLOR;
 	height: 100px;
 
 	display: flex;
@@ -12,8 +12,8 @@
 	align-items: center;
 
 	.company-name {
-		font-size: $FONT_SIZE_COMPANY-NAME;
-		font-weight: $FONT_WEIGHT_BOLD;
+		font-size: fontsVariables.$FONT_SIZE_COMPANY-NAME;
+		font-weight: fontsVariables.$FONT_WEIGHT_BOLD;
 	}
 
 	.navigation {
@@ -24,8 +24,8 @@
 			display: flex;
 			width: 245px;
 			height: 48px;
-			border-radius: $PADDING;
-			background-color: $ADDITIONAL_COLOR;
+			border-radius: utilsVariables.$PADDING;
+			background-color: colorVariables.$ADDITIONAL_COLOR;
 
 			.anchor-text {
 				margin: auto;

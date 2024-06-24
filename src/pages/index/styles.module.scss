@@ -1,8 +1,8 @@
-@import 'src/styles/mixins.scss';
+@use '/src/styles/mixins.scss';
 
 .main {
 	max-width: 1792px;
 	width: 100%;
 	margin: auto;
-	@include BLOCK_GAP;
+	@include mixins.BLOCK_GAP;
 }

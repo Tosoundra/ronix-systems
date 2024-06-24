@@ -1,13 +1,13 @@
-@import 'src/styles/colorVariables.scss';
-@import 'src/styles/utilsVariables.scss';
-@import 'src/styles/fontsVariables.scss';
+@use './colorVariables.scss';
+@use './utilsVariables.scss';
+@use './fontsVariables.scss';
 
 @mixin CARD_TITLE_SETUP {
 	position: absolute;
 	left: 32px;
 	bottom: 65px;
-	font-size: $FONT_SIZE_MAIN;
-	font-weight: $FONT_WEIGHT_BOLD;
+	font-size: fontsVariables.$FONT_SIZE_MAIN;
+	font-weight: fontsVariables.$FONT_WEIGHT_BOLD;
 }
 
 @mixin BLOCK_GAP {

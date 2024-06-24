@@ -1,25 +1,25 @@
-@import 'src/styles/colorVariables.scss';
-@import 'src/styles/utilsVariables.scss';
-@import 'src/styles/fontsVariables.scss';
+@use '/src/styles/colorVariables.scss';
+@use '/src/styles/utilsVariables.scss';
+@use '/src/styles/fontsVariables.scss';
 
 .footer {
 	height: 245px;
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 51px;
-	background-color: $MAIN_COLOR;
+	background-color: colorVariables.$MAIN_COLOR;
 
 	.company-name {
-		font-size: $FONT_SIZE_COMPANY-NAME;
-		font-weight: $FONT_WEIGHT_BOLD;
+		font-size: fontsVariables.$FONT_SIZE_COMPANY-NAME;
+		font-weight: fontsVariables.$FONT_WEIGHT_BOLD;
 	}
 
 	.link-container {
 		display: flex;
 		flex-direction: column;
-		gap: $ELEMENTS_GAP;
+		gap: utilsVariables.$ELEMENTS_GAP;
 		.link {
-			font-size: $FONT_SIZE_FOOTER-LINK;
+			font-size: fontsVariables.$FONT_SIZE_FOOTER-LINK;
 		}
 	}
 }
