@@ -1,7 +1,7 @@
-@import 'src/styles/mixins';
-@import 'src/styles/colorVariables';
-@import 'src/styles/utilsVariables';
-@import 'src/styles/fontsVariables';
+@import 'src/styles/mixins.scss';
+@import 'src/styles/colorVariables.scss';
+@import 'src/styles/utilsVariables.scss';
+@import 'src/styles/fontsVariables.scss';
 
 .cards {
 	display: flex;
