@@ -1,4 +1,4 @@
-@import 'src/styles/mixins.scss';
+/* @import 'src/styles/mixins.scss'; */
 
 :root {
 	font-family: 'Roboto Flex', sans-serif;
@@ -14,7 +14,9 @@
 }
 
 #root {
-	@include BLOCK_GAP;
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
 }
 
 * {
